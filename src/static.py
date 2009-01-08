@@ -7,7 +7,8 @@ from calendar import Calendar
 import re
 import urllib
 import threading
-import sys
+import sys,os
+sys.path.append(os.path.join(sys.path[0], "../lxml-1.3.6/src"))
 import util
 from sets import Set
 
@@ -56,22 +57,22 @@ def extractValue(url, name):
 
 
 def rewrite(url, template):
-	""" rewrites the url to a local form stripping parametrs
-	    and directories. the given template decides, which parameters
-			should be included in the local file name
-			see unit tests for examples """
-	local = extractPage(url)
+  """ rewrites the url to a local form stripping parametrs
+      and directories. the given template decides, which parameters
+  		should be included in the local file name
+  		see unit tests for examples """
+  local = extractPage(url)
+  
+  if (-1 < template.find('$date') and (-1 < url.find('year='))): # handle date parameter
+  	date = extractDate(url)
+  	local = '.'.join([local,date.strftime('%Y-%m-%d')])
+  
+  if (-1 < template.find('$lang')): # handle lang parameter
+  	local = '.'.join([local, extractValue(url,'lang')])
+  
+  local = '.'.join([local,localExt])
 
-  if (-1 < template.find('$date') and -1 < url.find('year=')): # handle date parameter
-		date = extractDate(url)
-		local = '.'.join([local,date.strftime('%Y-%m-%d')])
-
-	if (-1 < template.find('$lang')): # handle lang parameter
-		local = '.'.join([local, extractValue(url,'lang')])
-
-	local = '.'.join([local,localExt])
-
-	return local
+  return local
 
 def findTemplate(url, templates = []):
 	""" tries to find a template that can be used to rewrite the given

@@ -5,5 +5,6 @@ data/week*
 data/2*
 public/generator/*
 src/static.out
+lxml-1.3.6/*
 
 

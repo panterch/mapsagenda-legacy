@@ -3,7 +3,6 @@
 
 from __future__ import with_statement
 import sys
-sys.path.append("/home/mapsagenda/code/lxml-1.3.6/src")
 from lxml import etree
 from datetime import datetime, timedelta
 

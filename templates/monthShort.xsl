@@ -27,6 +27,7 @@
             '?lang=',$lang,
             '&amp;year=',$year,
             '&amp;month=',$month,
+            '&amp;day=',$day,
             '&amp;edit=',$edit)"/>
 					 </xsl:attribute>
 				mehr >></a>

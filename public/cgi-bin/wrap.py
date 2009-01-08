@@ -10,6 +10,7 @@ import cgitb; cgitb.enable()
 import sys, os
 # import paths holding programs
 sys.path.append(os.path.join(sys.path[0], "../../src"))
+sys.path.append(os.path.join(sys.path[0], "../../lxml-1.3.6/src"))
 import request
 import util
 from pageparts import *
