@@ -78,10 +78,13 @@ def eventFileName(state, lang, id):
 				 'day': int(state.day), 'lang': lang, '#': int(id) }
 	return name
 
-def weekFileName(state, lang):
-	""" puts togheter an the weekly event filename
+def monthFileName(state, lang):
+	""" puts togheter an the month event filename
 	"""
-	name='%(dir)s/week.%(lang)s.xml' % {'dir': state.datadir, 'lang': lang }
+	name='%(dir)s/%(year)i-%(month)02i.%(lang)s.xml' % \
+				{'dir': state.datadir, \
+				 'year': int(state.year), 'month': int(state.month), \
+				 'lang': lang }
 	return name
 
 def gmtnow():

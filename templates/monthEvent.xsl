@@ -35,9 +35,9 @@
 				</xsl:if>
 
 				<xsl:if test="$edit=1">
-				<p class="editlink">
-					<a href="/cgi-bin/edit.py?edit=w&amp;lang={$lang}">
-					Wochenthema bearbeiten
+        <p class="editlink">
+          <a href="/cgi-bin/edit.py?edit=m&amp;year={$year}&amp;month={$month}&amp;lang={$lang}">
+					Monatsthema bearbeiten
 					</a>
 				</p>
 			</xsl:if>

@@ -1,10 +1,10 @@
 <!--#include virtual="precontent.shtml" -->
 
-<h1>M.A.P.S. Wochenthema</h1>
+<h1>M.A.P.S. Monatsthema</h1>
 
 <div  id="events"  >
 
-<!--#include virtual="/cgi-bin/wrap.py?dispatch=WeekEvent&$QUERY_STRING" -->
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=MonthEvent&$QUERY_STRING" -->
 
 </div>
 

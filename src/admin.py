@@ -19,20 +19,12 @@ class Admin:
 		"""
 		# edit state s(ave) signals that we should process form data
 		# and store it to xml. user is redirected to calendar page
-		if ('s'==state.edit):
+		if ('s'==state.edit.lower()):
 			self.store(state)
 			# redirect url
-			print 'Location: /event.shtml?year=%(y)s&amp;month=%(m)s&amp;day=%(d)s&amp;lang=%(lang)s&amp;edit=1' % \
-				{'y': state.year, 'm': state.month, 'd': state.day, 'lang': state.lang }
-			print
-			return
-		
-		# edit state S(ave) signals that we should save a weekly event
-		if ('S'==state.edit):
-			self.store(state)
-			# redirect url
-			print 'Location: /week.shtml?lang=%(lang)s&amp;edit=1' % \
-				{'y': state.year, 'm': state.month, 'd': state.day, 'lang': state.lang }
+			print 'Location: /%(t)s.shtml?year=%(y)s&amp;month=%(m)s&amp;day=%(d)s&amp;lang=%(lang)s&amp;edit=1' % \
+        { 't': ('event' if state.edit.islower() else 'month'),
+          'y': state.year, 'm': state.month, 'd': state.day, 'lang': state.lang }
 			print
 			return
 
@@ -64,10 +56,10 @@ class Admin:
 			AdminEvent().render(state)
 
 		# this block should only be rendered, if a user clicked on the
-		# edit link the weekly event
-		if ('w'==state.edit):
-			OriginalWeekEvent().render(state)
-			AdminWeekEvent().render(state)
+		# edit link the monthly event
+		if ('m'==state.edit):
+			OriginalMonthEvent().render(state)
+			AdminMonthEvent().render(state)
 
 		EditLinks().render(state)
 		util.closetag('div')
@@ -79,7 +71,7 @@ class Admin:
 		if ('s' == state.edit):
 			name = util.eventFileName(state, state.lang, state.eventid)
 		if ('S' == state.edit):
-			name = util.weekFileName(state, state.lang)
+			name = util.monthFileName(state, state.lang)
 		f = open(name,'w')
 		f.truncate()
 		print >>f, '<?xml version="1.0" encoding="UTF-8"?>'
@@ -117,7 +109,7 @@ class AdminEvent:
 		state.edit='s' # set edit type to event save
 		util.transform(state, xslt_file, xml_file)
 
-class AdminWeekEvent:
+class AdminMonthEvent:
 	""" renders a form to edit the current selected event
 	"""
 
@@ -126,14 +118,14 @@ class AdminWeekEvent:
 		""" trys to access current days event files and transforms them
 		"""
 		# try to access special language event
-		name = util.weekFileName(state, state.lang)
+		name = util.monthFileName(state, state.lang)
 		if not os.path.exists(name):
-		  name = name = util.weekFileName(state, 'de')
+		  name = name = util.monthFileName(state, 'de')
 		if not os.path.exists(name):
 			name = (Request.templatedir+'/emptyevent.xml')
 		xml_file = file(name)
 		xslt_file = file(Request.templatedir+'/admin.xsl')
-		state.edit='S' # set edit type to week event save
+		state.edit='S' # set edit type to month event save
 		util.transform(state, xslt_file, xml_file)
 
 class OriginalEvent:
@@ -153,7 +145,7 @@ class OriginalEvent:
 		util.transform(state, xslt_file, xml_file)
 
 
-class OriginalWeekEvent:
+class OriginalMonthEvent:
 	""" displays the event in default language, read only
 	"""
 
@@ -162,11 +154,11 @@ class OriginalWeekEvent:
 		""" trys to access current days event files and transforms them
 		"""
 		# try to access default language event
-		name = util.weekFileName(state, 'de')
+		name = util.monthFileName(state, 'de')
 		if not os.path.exists(name):
 			return
 		xml_file = file(name)
-		xslt_file = file(Request.templatedir+'/week.xsl')
+		xslt_file = file(Request.templatedir+'/monthEvent.xsl')
 		util.transform(state, xslt_file, xml_file)
 
 

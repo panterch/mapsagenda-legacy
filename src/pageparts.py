@@ -5,43 +5,42 @@ import util
 from request import Request
 
 
-class WeekShort:
-	""" control class for week event short display
+class MonthShort:
+	""" control class for month event short display
 	"""
 
 	def render(self,state):	
 		""" trys to access current days event files and transforms them
 		"""
-		# try to access current week.xml and render it
-		name=util.weekFileName(state, state.lang)
+		# try to access current month.xml and render it
+		name=util.monthFileName(state, state.lang)
 		if not os.path.exists(name): # fallback to default lang
-			name=util.weekFileName(state, 'de')
+			name=util.monthFileName(state, 'de')
 		if not os.path.exists(name):
 			name = (Request.templatedir+'/emptyevent.xml')
 		if not os.path.exists(name):
 			return
 		xml_file = file(name)
-		xslt_file = file(Request.templatedir+'/weekShort.xsl')
+		xslt_file = file(Request.templatedir+'/monthShort.xsl')
 		util.transform(state, xslt_file, xml_file)
 		
-
-class WeekEvent:
-	""" control class for week event display
+class MonthEvent:
+	""" control class for month event display
 	"""
 
 	def render(self,state):	
 		""" trys to access current days event files and transforms them
 		"""
-		# try to access current week.xml and render it
-		name=util.weekFileName(state, state.lang)
+		# try to access requested month xml and render it
+		name=util.monthFileName(state, state.lang)
 		if not os.path.exists(name): # fallback to default lang
-			name=util.weekFileName(state, 'de')
+			name=util.monthFileName(state, 'de')
 		if not os.path.exists(name):
 			name = (Request.templatedir+'/emptyevent.xml')
 		if not os.path.exists(name):
 			return
 		xml_file = file(name)
-		xslt_file = file(Request.templatedir+'/week.xsl')
+		xslt_file = file(Request.templatedir+'/monthEvent.xsl')
 		util.transform(state, xslt_file, xml_file)
 		
 

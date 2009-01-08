@@ -4,7 +4,7 @@
 
 <div  id="events"  >
 
-<!--#include virtual="/cgi-bin/wrap.py?dispatch=WeekShort&$QUERY_STRING" -->
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=MonthShort&$QUERY_STRING" -->
 
 <h1 style="margin-top: 30px">Aktuelle Events</h1>
 <!--#include virtual="/cgi-bin/wrap.py?dispatch=EventShort&$QUERY_STRING" -->

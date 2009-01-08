@@ -23,8 +23,10 @@
 				<xsl:value-of select="substring(regexp:replace(string(desc), '&lt;[a-z/]*(\ /)?&gt;', 'g',''), 0, 250)" disable-output-escaping = "yes" />
 				<xsl:text> ... </xsl:text>
 				<a><xsl:attribute name="href">
-           <xsl:value-of select="concat('/week.shtml',
+          <xsl:value-of select="concat('/month.shtml',
             '?lang=',$lang,
+            '&amp;year=',$year,
+            '&amp;month=',$month,
             '&amp;edit=',$edit)"/>
 					 </xsl:attribute>
 				mehr >></a>

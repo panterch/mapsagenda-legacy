@@ -22,8 +22,8 @@
 
 <!--#include virtual="/cgi-bin/wrap.py?dispatch=Month&$QUERY_STRING" -->
 <p>
-<a href="/week.shtml?<!--#echo var="QUERY_STRING"-->" >
-Wochenthema
+<a href="/month.shtml?<!--#echo var="QUERY_STRING"-->" >
+Monatsthema
 </a>
 </p><p>
 <a onclick="this.target = '_blank';"
