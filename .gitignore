@@ -3,7 +3,7 @@
 libxslt
 data/week*
 data/2*
-public/generator/
+public/generator/*
 src/static.out
 
 
