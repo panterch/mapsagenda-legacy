@@ -17,6 +17,12 @@
 				<xsl:value-of select="desc" disable-output-escaping="yes"/>
 				</p>
 
+				<xsl:if test="string-length(location) &gt; 0">
+				<p class='location'>
+				<xsl:value-of select="location" />
+				</p>
+        </xsl:if>
+
 				<xsl:if test="string-length(url) &gt; 0">
 				<p class='url'>
 					<a onclick="this.target = '_blank';">
@@ -25,12 +31,6 @@
 						</xsl:attribute>
 						<xsl:value-of select="url"/>
 					</a>
-				</p>
-				</xsl:if>
-
-				<xsl:if test="string-length(location) &gt; 0">
-				<p class='location'>
-				<xsl:value-of select="location" />
 				</p>
 				</xsl:if>
 

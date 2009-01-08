@@ -23,7 +23,7 @@ class Admin:
 			self.store(state)
 			# redirect url
 			print 'Location: /%(t)s.shtml?year=%(y)s&amp;month=%(m)s&amp;day=%(d)s&amp;lang=%(lang)s&amp;edit=1' % \
-        { 't': ('event' if state.edit.islower() else 'month'),
+        { 't': ('event' if state.edit.islower() else 'monthEvent'),
           'y': state.year, 'm': state.month, 'd': state.day, 'lang': state.lang }
 			print
 			return

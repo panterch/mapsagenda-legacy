@@ -62,7 +62,7 @@ def rewrite(url, template):
 			see unit tests for examples """
 	local = extractPage(url)
 
-	if (-1 < template.find('$date')): # handle date parameter
+  if (-1 < template.find('$date') and -1 < url.find('year=')): # handle date parameter
 		date = extractDate(url)
 		local = '.'.join([local,date.strftime('%Y-%m-%d')])
 

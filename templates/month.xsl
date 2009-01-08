@@ -67,7 +67,8 @@ Source code from 4suite demo http://demos.4suite.org/index.html
               </td>
               <td>
                 <span class="mctitle">
-		              <a href="month.shtml?year={$year}&amp;month={$month}&amp;edit={$edit}&amp;lang={$lang}">
+                  <a
+                    href="/monthEvent.shtml?year={$year}&amp;month={$month}&amp;day={$day}&amp;edit={$edit}&amp;lang={$lang}">
                   <xsl:call-template name="getmonthname">
                     <xsl:with-param name="monthnum" select="$month"/>
                   </xsl:call-template>
