@@ -1,0 +1,27 @@
+
+<!--#include virtual="precontent.shtml" -->
+
+
+<h1>Seite nicht vorhanden / Page not found (404)</h1>
+
+
+<div id="events">
+
+
+
+<p>
+Die gew&uuml;nschte Seite ist nicht vorhanden, bitte versuchen Sie es
+zu einem sp&auml;teren Zeitpunkt nochmals.
+</p>
+<p>
+<a href="javascript: history.go(-1)">Zur&uuml;ck / Back</a>
+</p>
+
+
+
+</div>
+
+<!--#include virtual="postcontent.shtml" -->
+
+
+

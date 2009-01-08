@@ -1,0 +1,9 @@
+<!--#include virtual="precontent.shtml" -->
+
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=Date&$QUERY_STRING" -->
+<div  id="events"  >
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=Event&$QUERY_STRING" -->
+</div>
+
+<!--#include virtual="postcontent.shtml" -->
+

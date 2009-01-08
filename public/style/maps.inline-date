@@ -1,0 +1,291 @@
+/**
+ * common styles ; may be overwritten by cascade
+ **/
+
+body {
+	background-color: #DBE3DE;
+	font-family: sans-serif;
+	color: #000000;
+	font-size: 10pt;
+	margin-left: auto;
+	margin-right: auto;
+	width: 708px;
+}
+
+a {
+	color: #000000;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	border: none;
+}
+
+h1 {
+	font-size: 120%;
+	font-weight: bold;
+	border-bottom: solid 1px #000000;	
+	width: 407px;
+}
+
+/* please note: there exists a version of this tag with opposite
+   text direction! see other css files in directory */
+h2 {
+	font-size: 120%;
+	margin: 20px 0px 0px 0px;
+}
+
+#content {
+	border: solid 1px #B5B7B6; 
+	width:  686px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	text-align: left;
+	
+}
+
+#content-right {
+	float: right; 
+	clear: right; 
+	text-align: right; 
+	width: 230px;	
+}
+
+#content-right input.text {
+	border: solid 1px #DFDFDF;
+	margin: 0px 0px 0px 5px;
+	padding: 2px 0px 0px 0px;	
+	color: #999999;
+	font-weight: normal;
+	background-color: #FFFFFF;
+	float: right;
+	height: 20px;
+
+}
+
+#content-right input.submit {
+	border: solid 1px #727272;
+	margin: 1px;
+	color: #FFFFFF;
+	font-weight: normal;
+	background-color: #CCCCCC;
+	padding: 0px;
+	float: right;
+	height: 22px;	
+}
+
+#logo1 {
+	margin: 10px 0px;
+	width: 708px;
+}
+
+#logo2 {
+	float: right; 
+	margin-top: -29px;
+}
+
+
+#current-date {
+	font-size: 120%;
+	border-bottom: solid 1px #000000;	
+	width: 407px;
+}
+
+
+#events {
+	width: 407px;
+	padding-right: 20px;
+	border-right: solid 1px #000000;
+	min-height: 400px;	
+	height: auto !important;
+	height: 400px;
+}
+
+#events .event {
+	/* border-bottom: solid 1px #EBEBEB; */
+	margin-bottom: 20px;
+}
+
+#events .event-last {
+	border-bottom: none;
+}
+
+.trans {
+  font-style: italic;
+  font-size: 75%;
+  color: #778899;
+}
+
+p.info {
+	margin: 0px;
+	clear: left;
+}
+p.info span.desc {
+	width: 30px;
+	float: left;
+}
+
+p.desc {
+	margin: 0px;
+}
+p.location {
+	margin: 0px;
+}
+
+
+/* language selection list */
+#languages {
+	border-top: solid 1px #B5B7B6; 
+	border-bottom: solid 1px #B5B7B6;	
+	background-color: #FFFFFF;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	width: 708px;
+	font-size: 75%;	
+}
+
+#languages ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#languages li {
+  list-style-type: none;
+  float: left;
+  padding: 0px 6px;
+  line-height: 20px;
+  background-image: url(bg-languages.gif);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#languages a.selected {
+	font-weight: bold;
+}
+
+#languages li.last {
+	background-image: none;
+}
+
+/*
+ * calendar elements
+ **/
+
+/* box being container for calendar */
+
+table.mcouter {
+	float: right;
+	font-size: 80%;
+	width: 240px;	
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+
+table.mcouter tr {
+}
+
+
+table.mcouter td {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;	
+}
+
+/* table holding calendar dates */
+table.mcmain {
+	border-collapse: collapse;
+	border: solid 1px #ADADAD;
+	width: 240px;
+	float: right;
+}
+
+table.mcmain th, table.mcmain td {
+	border: solid 1px #ADADAD;
+	width: 14%;
+	color: #5B5B5B;
+	padding: 0px;
+	margin:  0px;
+}
+
+table.mcmain a {
+	width: 100%;
+	height: 14px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	/*display:-moz-inline-block;
+	display:-moz-inline-box;*/
+
+
+}
+
+table.mcmain td.selected {
+	background-color: #5B5B5B;
+}
+
+table.mcmain td.selected a {
+	color: white;
+	font-weight: bold;
+}
+
+table.mcmain td.today a {
+	font-weight: bold;
+}
+
+
+
+/* footer elements */
+#footer {
+	text-align: center;
+	font-style: italic;
+	font-size: 75%;
+	color: #778899;
+	clear: both; 
+}
+
+#footer a {
+	color: #778899;
+}
+/* debug box style */
+/*
+div.debug {
+	height: 100px;
+	width:  600px;
+	font-size: 8px;	
+	overflow: auto;
+}
+*/
+
+p.editlink {
+	margin-bottom: 50px;
+}
+
+p.editlink a {
+	font-size: 75%;
+	border: solid 1px;
+	color: black;
+	background-color: #E6E6E6;
+  background-image: url(edit.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+	padding: 3px 3px 3px 16px;
+}
+
+

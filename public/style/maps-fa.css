@@ -1,0 +1,47 @@
+/** special css styles for rtl languages */
+
+
+h2 {
+	direction: rtl;
+	text-align: right;
+	font-size: 120%;
+	font-style: italic;
+	margin: 10px 0px 0px 0px;
+}
+
+p.desc {
+	margin: 0px;
+	direction: rtl;
+	text-align: right;
+}
+
+p.location {
+	margin: 0px;
+	text-align: right;
+}
+
+p.eventShort {
+	direction: rtl;
+	text-align: right;
+}
+
+p.url {
+	text-align: right;
+}
+
+input {
+	text-align: right;
+}
+
+input.title {
+	direction: rtl;
+	text-align: right;
+}
+
+textarea.desc {
+	direction: rtl;
+	text-align: right;
+}
+
+
+

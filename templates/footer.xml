@@ -1,0 +1,16 @@
+<div id="logo2">
+<a href="http://www.aoz.ch" onclick="this.target = '_blank';">
+<img src="/aoz-stadtzuerich.gif" width="211" height="29" alt="" />
+</a>
+</div>
+
+
+<div id="footer">
+valid
+<a href="http://validator.w3.org/check?uri=referer">xhtml</a>
+&amp;
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+/ code:
+<a href="http://www.panter.ch" onclick="this.target = '_blank';">panter llc</a>
+</div>
+

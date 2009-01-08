@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languages>
+
+	<language>
+		<title>Albanisch</title>
+		<iso>sq</iso>
+		<text>Shqip</text>
+	</language>
+
+	<language>
+		<title>Arabisch</title>
+		<iso>ar</iso>
+		<text>العربية</text>
+	</language>
+
+	<language>
+		<title>Deutsch</title>
+		<iso>de</iso>
+		<text>Deutsch</text>
+	</language>
+
+	<language>
+		<title>Englisch</title>
+		<iso>en</iso>
+		<text>English</text>
+	</language>
+
+	<language>
+		<title>Französisch</title>
+		<iso>fr</iso>
+		<text>Français</text>
+	</language>
+
+<!--
+	<language>
+		<title>Kurdisch</title>
+		<iso>ku</iso>
+		<text>Kurdî</text>
+	</language>
+-->
+
+	<language>
+		<title>Persisch</title>
+		<iso>fa</iso>
+		<text>فارسی</text>
+	</language>
+
+	<language>
+		<title>Portugiesisch</title>
+		<iso>pt</iso>
+		<text>Português</text>
+	</language>
+
+	<language>
+		<title>Russisch</title>
+		<iso>ru</iso>
+		<text>Русский</text>
+	</language>
+
+	<language>
+		<title>Serbisch/Bosnisch/Kroatisch</title>
+		<iso>sh</iso>
+		<text>Srpski/Bosanski/Hrvatski</text>
+	</language>
+
+	<language>
+		<title>Spanisch</title>
+		<iso>es</iso>
+		<text>Español</text>
+	</language>
+
+  <language>
+    <title>Italienisch</title>
+    <iso>it</iso>
+    <text>Italiano</text>
+  </language>
+
+	<language>
+		<title>Tamilisch</title>
+		<iso>ta</iso>
+		<text>தமிழ்</text>
+	</language>
+
+	<language>
+		<title>Türkisch</title>
+		<iso>tr</iso>
+		<text>Türkçe</text>
+	</language>
+<!--
+	<language>
+		<title>Somalisch</title>
+		<iso>so</iso>
+		<text>Somali</text>
+	</language>
+-->
+
+	
+</languages>
+
+
+
