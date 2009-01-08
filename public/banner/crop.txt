@@ -1,0 +1,4 @@
+
+
+# png to jpg
+for f in *png ; do echo $f ; target=`echo $f | sed 's/png/jpg/'`; echo $target ; convert $f -quality 70  -bordercolor "#cacaca"  -crop 433x122+0+0 -border 2 tmp/$target ; done

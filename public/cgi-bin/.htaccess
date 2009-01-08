@@ -1,0 +1,7 @@
+AuthName "M.A.P.S. Admin"
+AuthType Basic
+AuthUserFile /home/mapsagenda/code/htpasswd
+Allow From All
+<Files edit.py>
+Require valid-user
+</Files>

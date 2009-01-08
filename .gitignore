@@ -1,0 +1,9 @@
+*.swp
+*.pyc
+libxslt
+data/week*
+data/2*
+public/generator/
+src/static.out
+
+

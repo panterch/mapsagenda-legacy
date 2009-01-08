@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=HtmlHeader&$QUERY_STRING" -->
+
+<body>
+
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=Language&$QUERY_STRING" -->
+
+<div id="logo1">
+<a href='/index.shtml?<!--#echo var="QUERY_STRING"-->'>
+<img src="<!--#include virtual="/cgi-bin/wrap.py?dispatch=HeaderImagePath" -->"
+	width="437" height="126" alt="banner image" style="float: left"/>
+<img src="/img/maps.png" width="271" height="126" alt="maps logo"/>
+</a>
+</div>
+
+
+<div id="content"  >
+<div id="content-right"  >
+
+<!--#include virtual="/cgi-bin/wrap.py?dispatch=Month&$QUERY_STRING" -->
+<p>
+<a href="/week.shtml?<!--#echo var="QUERY_STRING"-->" >
+Wochenthema
+</a>
+</p><p>
+<a onclick="this.target = '_blank';"
+href="http://www.stadt-zuerich.ch/internet/aoz/home/kontaktformulare/mail_an_m_a_p_s.html">
+Kontakt
+</a>
+</p>
+<p>
+<a href="/about.shtml?<!--#echo var="QUERY_STRING"-->" >
+&Uuml;ber M.A.P.S.
+</a>
+</p>
+<p>
+<a href="/impress.shtml?<!--#echo var="QUERY_STRING"-->">
+Impressum
+</a>
+</p>
+</div>
+

@@ -1,0 +1,7 @@
+AuthUserFile /mnt/local/home/mapsagenda/staging/generator/.htpasswd
+AuthGroupFile /dev/null
+AuthName "maps generator"
+AuthType Basic
+<Limit GET>
+require valid-user
+</Limit>
