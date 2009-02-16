@@ -139,7 +139,7 @@ p.info span.desc {
 	float: left;
 }
 
-div.desc {
+div.desc, p.desc {
 	margin: 0px;
 }
 p.location {
