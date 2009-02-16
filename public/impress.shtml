@@ -1,42 +1,14 @@
 <!--#include virtual="precontent.shtml" -->
-
 <h1>Impressum</h1>
-
 <div id="events">
-
-<p>
-<b>Projektleitung_</b> Katrin Stallmach
-</p><p> 
-<b>Projektleitungsassistenz_</b> Sundus Gohar
-</p><p>
-<b>Redaktions- und Übersetzungsteam_</b> 
-Masume Alikhani, Thais Aguiar, Dzenet Bahtijarevic, Andrina Bernhard, John Ebong Koko, Amanda
-Egger, Xelat Ehmed, Maryam Ghafouri, Ridha Ghnichi, Lina Karam Dar Abadi,
-Mehmet Özler, Aleksandr Reiss, Silvia Romero
-Martinez,Jeganathan Periyathamby, Silvia Possu, Ibrahim Skenderi, Sally Stern
-</p><p>
-<b>Promotion_</b> Paula Krieg
-</p><p>
-<b>Kurierdienst_</b>
-Hissam Al-Kachuri, Hana Fequde, Nittsuh Manfredo,  Aleksandr Reiss, Vasiliy Taras, Tighisti Tefamariam
-</p><p> 
-<b>Online_</b> Panter llc - Beat Seeliger, Marcus Hilbe
-</p><p>
-<b>Herausgeberin_</b> AOZ
-Information und Kommunikation
-Zypressenstrasse 60, CH-8040 Zürich
-</p><p>
-<b>Konzept_</b>
-Thomas Schmutz, Silvana Kohler, Sabina Handschin
-In Zusammenarbeit mit dem Ethnologischen Seminar Zürich
-</p><p>
-<b>Fotograf/innen_</b>
-Jérome Delmotte,Thomas Fierz (www.thomasfierz.com), Eloisa von Halle, Heinz Kohler, Beat Kueng, Eke Miedaner, Corinne Roffler, Katja Schaefer, Alexander
-Zabara
-
-</p>
-
+<p> <strong>Projektleitung_</strong> Katrin Stallmach </p>
+<p>  <strong>Projektleitungsassistenz_</strong> Sundus Gohar </p>
+<p> <strong>Redaktions- und &Uuml;bersetzungsteam_</strong>  Masume Alikhani, Thais Aguiar, Dzenet Bahtijarevic, Andrina Bernhard, John Ebong Koko, Amanda Egger, Maryam Ghafouri, Ridha Ghnichi, Kalpana Johnson, Lina Karam Dar Abadi,Marcelo Madeira, Franziska Neziri, Mehmet &Ouml;zler, Aleksandr Reiss, Silvia Romero Martinez, Jeganathan Periyathamby, Silvia Possu, Ibrahim Skenderi, Gisela Weise </p>
+<p> <strong>Kurierdienst_</strong> Ivan Azad Hamarasched, Hana Fequde, Aleksandr Reiss, Vasiliy Tara </p>
+<p>  <strong>Online_</strong> Panter llc - Beat Seeliger, Marcus Hilbe </p>
+<p> <strong>Herausgeberin_</strong> AOZ Information und Kommunikation Zypressenstrasse 60, CH-8040 Z&uuml;rich </p>
+<p> <strong>Konzept_</strong> Thomas Schmutz, Katrin Stallmach </p>
+<p> <strong>Print_</strong> Marcel Bamert </p>
+<p> <strong>Fotograf/innen_</strong> J&eacute;rome Delmotte, Thomas Fierz (www.thomasfierz.com), Eloisa von Halle, Heinz Kohler, Beat Kueng, Eke Miedaner, Corinne Roffler, Katja Schaefer, Alexander Zabara  </p>
 </div>
-
 <!--#include virtual="postcontent.shtml" -->
-

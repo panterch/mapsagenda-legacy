@@ -22,9 +22,9 @@
 				no translation yet</p>
 				</xsl:if>
 
-				<p class='desc'>
+				<div class='desc'>
 				<xsl:value-of select="desc" disable-output-escaping="yes" />
-				</p>
+				</div>
 
 				<xsl:if test="string-length(location) &gt; 0">
 				<p class='location'>
@@ -49,7 +49,10 @@
 					<xsl:value-of select="concat($eventid+1,'. Event bearbeiten')" />
 					</a>
 				</p>
-			</xsl:if>
+      </xsl:if>
+      <p>
+        <xsl:text disable-output-escaping='yes'><![CDATA[&nbsp;]]></xsl:text>
+      </p>
 
 			</div>
 			

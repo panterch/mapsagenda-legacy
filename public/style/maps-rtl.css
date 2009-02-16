@@ -9,7 +9,7 @@ h2 {
 	margin: 10px 0px 0px 0px;
 }
 
-p.desc {
+div.desc {
 	margin: 0px;
 	direction: rtl;
 	text-align: right;
