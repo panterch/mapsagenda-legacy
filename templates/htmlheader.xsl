@@ -16,7 +16,7 @@ Generated: <xsl:value-of select="$timestamp"/>
 
 <head>
 <title>
-	M.A.P.S. Zueri Agenda
+	MAPS Zueri Agenda
 	<xsl:call-template name="currentDate"/>
 </title>
 <meta name="author" content="seb / Panter llc" />

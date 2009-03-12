@@ -22,13 +22,15 @@
 				no translation yet</p>
 				</xsl:if>
 
+				<xsl:if test="string-length(desc) &gt; 0">
 				<div class='desc'>
-				<xsl:value-of select="desc" disable-output-escaping="yes" />
-				</div>
+          <xsl:value-of select="desc" disable-output-escaping="yes" />
+        </div>
+        </xsl:if>
 
 				<xsl:if test="string-length(location) &gt; 0">
 				<p class='location'>
-				<xsl:value-of select="location" />
+          <xsl:value-of select="location" />
 				</p>
 				</xsl:if>
 
