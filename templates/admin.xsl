@@ -27,7 +27,7 @@
 					</xsl:if>
 				</input>
 			</p>	
-			<p>Beschreibung:<br />
+      <p>Beschreibung:<br />
 			<!-- the data to admin here may be from the fallback (the german version)
 					 this is ok for most fields but not for description, so we have to
 					 check here if its real or fallback data -->
@@ -47,7 +47,11 @@
 					<xsl:otherwise>
 					<xsl:text disable-output-escaping='yes'><![CDATA[<textarea id='desc' name='desc' maxlength='10240' cols='50' rows='10'></textarea>]]></xsl:text>
 					</xsl:otherwise>
-				</xsl:choose>
+        </xsl:choose>
+        <br />
+        <a href='#' onclick='javascript: fcke()'>
+          (Hier klicken um erweiterten Editor zu starten)
+        </a>
 			</p>	
 			<p>Addresse:<br />
 				<input name='location' class='location'
@@ -110,6 +114,7 @@
 <xsl:text> </xsl:text>
 </script>
 <script type="text/javascript">
+function fcke() {
 var editor = new FCKeditor('desc');
 editor.BasePath = "/js/fckeditor/";
 editor.Config['CustomConfigurationsPath'] = "/js/fckconfig.js";
@@ -117,6 +122,7 @@ editor.Config['ContentLangDirection'] = $('desc').getStyle('direction');
 editor.ToolbarSet = 'maps';
 editor.DefaultLanguage = "<xsl:value-of select='$lang'/>" ;
 editor.ReplaceTextarea();
+}
 </script>
 
 			</form>
