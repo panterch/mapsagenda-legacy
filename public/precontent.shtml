@@ -27,7 +27,7 @@ Monatsthema
 </a>
 </p><p>
 <a onclick="this.target = '_blank';"
-href="http://www.stadt-zuerich.ch/content/aoz/de/index/integration/maps/agenda/jcr:content/contextparsys/kontakt/form.html">
+href="https://www.stadt-zuerich.ch/content/aoz/de/index/jcr:content/contextparsys/kontakt/form.popup.html">
 Kontakt
 </a>
 </p>
