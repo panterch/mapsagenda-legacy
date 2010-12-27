@@ -19,7 +19,6 @@ def saveToStatic(url, path, templates):
 	""" downloads and rewrites file under url. saves the rewritten version
 		  under correct local name in path """
 	template = findTemplate(url, templates)
-	print url
 	outName  = '/'.join([path, rewrite(url, template)])
 	out = open(outName, 'w')
 	input = None
@@ -196,8 +195,7 @@ if __name__ == '__main__':
 		threads.append(thread)
 	for thread in threads:
 		thread.join()
-		print 'thread # %i joined after %i pages' % (thread.id, thread.cnt)
-	print 'program end.'
+		# print 'thread # %i joined after %i pages' % (thread.id, thread.cnt)
 		
 
 
