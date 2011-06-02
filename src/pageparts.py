@@ -120,7 +120,7 @@ class Date:
 class HtmlHeader:
 	""" control class for html header display """
 	
-	xml_file = file(Request.templatedir+'/empty.xml')
+	xml_file = file(Request.templatedir+'/languages.xml')
 	xslt_file = file(Request.templatedir+'/htmlheader.xsl')
 
 	def render(self,state):

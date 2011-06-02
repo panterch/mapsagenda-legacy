@@ -16,13 +16,14 @@ Generated: <xsl:value-of select="$timestamp"/>
 
 <head>
 <title>
-	MAPS Zueri Agenda
+	Veranstaltungen - MAPS Züri Agenda
 	<xsl:call-template name="currentDate"/>
 </title>
 <meta name="author" content="seb / Panter llc" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="description" content="M.A.P.S. events" />
 <meta name="robots" content="all" />
+<meta name="keywords" lang="de" content="Veranstaltungen, Veranstaltungskalender, Events, Zürich, Maps Züri Agenda, Zürcher Kulturprogramm, Stadtleben, günstige, kostenlos, Zürcher Kultur- und Freizeitbereich, Freizeitangebote, Kulturangebot" />
+<meta name="description" content="Veranstaltungen und Events - Zürich. Der Veranstaltungskalender MAPS Züri Agenda informiert in 13 Sprachen über günstige Angebote im Zürcher Kultur- und Freizeitbereich." /> 
 <meta http-equiv="content-language">
 <xsl:attribute name="content">
 	<xsl:value-of select="$lang"/>

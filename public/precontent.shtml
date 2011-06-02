@@ -11,8 +11,8 @@
 <div id="logo1">
 <a href='/index.shtml?<!--#echo var="QUERY_STRING"-->'>
 <img src="<!--#include virtual="/cgi-bin/wrap.py?dispatch=HeaderImagePath" -->"
-	width="437" height="126" alt="banner image" style="float: left"/>
-<img src="/img/maps.png" width="271" height="126" alt="maps logo"/>
+	width="437" height="126" title="Veranstaltungen in Zürich" alt="Veranstaltungen in Zürich" style="float: left"/>
+<img src="/img/maps.png" width="271" height="126" title="MAPS Züri Agenda" alt="MAPS Züri Agenda"/>
 </a>
 </div>
 

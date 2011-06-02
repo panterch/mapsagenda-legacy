@@ -1,3 +1,13 @@
+<div id="intro">
+  <p>
+  Der Veranstaltungskalender MAPS Züri Agenda informiert in 13 Sprachen über
+  günstige Angebote im Zürcher Kultur- und Freizeitbereich.
+  Dieses Angebot richtet sich vor allem an Migrant/innen, deren Deutschkenntnisse
+  nicht für die Lektüre des "Züritipp" ausreichen und die über wenige finanzielle
+  Mittel verfügen.
+  </p>
+</div>
+
 <div id="logo2">
 <a href="http://www.aoz.ch" onclick="this.target = '_blank';">
 <img src="/img/aoz-stadtzuerich.gif" width="108" height="44" alt="" />
