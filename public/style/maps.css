@@ -130,6 +130,7 @@ h2 {
 	min-height: 400px;	
 	height: auto !important;
 	height: 400px;
+  margin-bottom: 50px;
 }
 
 #events .event {
