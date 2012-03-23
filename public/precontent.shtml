@@ -41,5 +41,44 @@ Kontakt
 Impressum
 </a>
 </p>
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://maps-agenda.us4.list-manage1.com/subscribe/post?u=c017eb335933c3c13217325dd&amp;id=12675b6bea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+  <p>Maps Agenda abonnieren:<br />
+     Subscribe to mailing list:</p>
+ <div class="mc-field-group">
+   <label for="mce-EMAIL">Email</span>
+ </label>
+   <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+ </div>
+ <div class="mc-field-group">
+  <label for="mce-group[6165]">Sprache</label>
+  <select name="group[6165]" class="REQ_CSS" id="mce-group[6165]">
+  <option value=""></option>
+  <option value="1">Deutsch</option>
+  <option value="2">English</option>
+  <option value="4">Français</option>
+  <option value="8">Italiano</option>
+  <option value="16">Shqip</option>
+  <option value="32">العربية</option>
+  <option value="64">Português</option>
+  <option value="128">Русский</option>
+  <option value="256">Srpski/Bosanski/Hrvatski</option>
+  <option value="512">Español</option>
+  <option value="1024">தமிழ்</option>
+  <option value="2048">Türkçe</option>
+  </select>
+</div>
+  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
 </div>
 

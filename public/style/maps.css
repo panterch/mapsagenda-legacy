@@ -295,4 +295,21 @@ p.editlink a {
 	padding: 3px 3px 3px 16px;
 }
 
+#mc_embed_signup {
+  border-top: 1px solid black;
+}
+
+#mc_embed_signup .mc-field-group {
+  height: 30px;
+}
+
+#mc_embed_signup .mc-field-group label {
+  float: left;
+  line-height: 30px;
+}
+#mc_embed_signup .mc-field-group select, 
+#mc_embed_signup .mc-field-group input {
+  width: 160px;
+}
+
 
